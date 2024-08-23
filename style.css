@@ -2,6 +2,11 @@
     font-family: cursive;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+/* root */
+:root{
+    --gap: 20px;
 }
 /* header */
 header{
@@ -21,23 +26,32 @@ header h1{
 /* main */
 main .container{
     width: 100%;
-    height: 600px;
+    height: auto;
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: column wrap;
     align-items: baseline;
-    justify-content: space-around;
+    margin-bottom: 30px;
+    margin-top: 20px;
 }
 main .container h2{
     font-size: 30px;
 }
-main .container h3{
-    margin-top: -40px;
-}
 /* footer */
-footer .container{
+.container{
     width: 100%;
-    height: 700px;
+    height: auto;
     display: flex;
-    flex-flow: row nowrap;
-    background-color: aqua;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    align-content: baseline;
+}
+.container section{
+    width: 33.33333333%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
 }
